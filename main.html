@@ -1,1 +1,329 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Profile</title>
 
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
+			color: #444;
+		}
+
+		.profile-container {
+			width: 94%;
+			max-width: 1450px;
+			margin: 30px auto;
+			padding: 50px 30px;
+			background-color: white;
+			box-shadow: 0 2px 8px #ccc;
+			display: flex;
+			gap: 35px;
+		}
+
+		.left {
+			width: 50%;
+		}
+
+		.right {
+			width: 50px;
+			padding-left: 10px;
+		}
+
+		.profile-top {
+			display: flex;
+			align-items: flex-start;
+			gap: 85px;
+		}
+
+		.profile-photo {
+			width: 205px;
+			height: 205px;
+			object-fit: cover;
+		}
+
+		.details {
+			padding-top: 5px;
+			font-size: 18px;
+			line-height: 1.7;
+		}
+
+		.details p {
+			margin: 0;
+		}
+
+		.details strong {
+			color: #222;
+		}
+
+		.skills {
+			margin-top: 25px;
+		}
+
+		.skills h2,
+		.about h2 {
+			color: #222;
+			font-size: 30px;
+			margin-bottom: 25px;
+		}
+
+		.skill-row {
+			margin-bottom: 22px;
+		}
+
+		
+	   .skill-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 18px;
+          margin-bottom: 8px;
+       }
+
+      .skill-names {
+         display: flex;
+         gap: 15px;
+         align-items: center;
+         flex-wrap: wrap;
+       }
+
+      .skill-names span {
+         font-weight: normal;
+       }
+
+       .percentage {
+          font-size: 17px;
+       }
+
+       .bar {
+         width: 100%;
+         height: 10px;
+         background-color: #d9e7f7;
+       }
+
+        .progress {
+           height: 10px;
+           background-color: #1877f2;
+      }
+
+       .progress-95 {
+          width: 95%;
+      }
+
+       .progress-90 {
+          width: 90%;
+      }
+
+       .progress-99 {
+          width: 99%;
+      }
+
+       .progress-93 {
+          width: 93%;
+    }
+
+    
+    .about h2 {
+      font-size: 40px;
+      margin-top: 10px;
+      margin-bottom: 35px;
+      display: inline-block;
+      border-bottom: 4px solid #1877f2;
+      padding-bottom: 10px;
+    }
+
+    .about p {
+      font-size: 25px;
+      line-height: 1.45;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    @media (max-width: 900px) {
+      .profile-container {
+        flex-direction: column;
+      }
+
+      .left,
+      .right {
+        width: 100%;
+      }
+
+      .profile-top {
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .profile-top {
+        flex-direction: column;
+      }
+
+      .profile-photo {
+        width: 180px;
+        height: 180px;
+      }
+
+      .about p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="profile-container">
+
+    
+    <div class="left">
+
+      <div class="profile-top">
+
+        
+        <img
+          class="profile-photo"
+          src="https://i.pravatar.cc/300?img=12"
+          alt="Profile picture"
+        >
+
+        
+        <div class="details">
+
+          <p>
+            <strong>Name:</strong> Kaviya E
+          </p>
+
+          <p>
+            <strong>Profile:</strong> Software Developer
+          </p>
+
+          <p>
+            <strong>Email:</strong> kaviya@example.com
+          </p>
+
+        </div>
+
+      </div>
+
+     
+      <section class="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skill-row">
+
+          <div class="skill-title">
+            <div class="skill-names">
+              <span>REACT ⚛</span>
+              <span>CSS 🅲</span>
+              <span>JAVASCRIPT 🟨</span>
+            </div>
+
+            <span class="percentage">95%</span>
+          </div>
+
+          <div class="bar">
+            <div class="progress progress-95"></div>
+          </div>
+
+        </div>
+
+
+        <div class="skill-row">
+
+          <div class="skill-title">
+            <div class="skill-names">
+              <span>NODEJS 🟢</span>
+              <span>MONGODB 🟩</span>
+            </div>
+
+            <span class="percentage">90%</span>
+          </div>
+
+          <div class="bar">
+            <div class="progress progress-90"></div>
+          </div>
+
+        </div>
+
+
+        <div class="skill-row">
+
+          <div class="skill-title">
+            <div class="skill-names">
+              <span>C/C++ 🔵</span>
+              <span>PYTHON 🐍</span>
+              <span>BATCH ▣</span>
+            </div>
+
+            <span class="percentage">99%</span>
+          </div>
+
+          <div class="bar">
+            <div class="progress progress-99"></div>
+          </div>
+
+        </div>
+
+
+        <div class="skill-row">
+
+          <div class="skill-title">
+            <div class="skill-names">
+              <span>AWS ☁</span>
+              <span>HADOOP 🐘</span>
+            </div>
+
+            <span class="percentage">93%</span>
+          </div>
+
+          <div class="bar">
+            <div class="progress progress-93"></div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+
+    
+    <div class="right">
+
+      <section class="about">
+
+        <h2>About me</h2>
+
+        <p>
+          I am a self-starter with a passion to adapt and evangelise new
+          technologies. I have a passion for software development with
+          a diverse skillset ranging from the MERN stack to a stronghold
+          on data structures and algorithms. I like to tackle complex
+          challenges head-on to deliver technically sound solutions with
+          optimum efficiency.
+        </p>
+
+        <p>
+          I believe that magic is possible with a blend of imagination,
+          hard-work and passion. Most of all, I believe in determination
+          and honest efforts to enhance my skills in order to contribute
+          to the growth of society.
+        </p>
+
+      </section>
+
+    </div>
+
+  </div>
+
+</body>
+</html>yle>
+</head>
